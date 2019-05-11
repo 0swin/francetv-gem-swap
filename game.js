@@ -5,16 +5,17 @@ let gameOptions = {
     fallSpeed: 100,
     destroySpeed: 200,
     boardOffset: {
-        x: 100,
-        y: 50
+        x: 0,
+        y: 0
     }
 }
 window.onload = function() {
     let gameConfig = {
-        width: 900,
-        height: 900,
+        width: 1800,
+        height: 1800,
         scene: playGame,
-        backgroundColor: 0x222222
+        backgroundColor: 0x222222,
+        parent: "game"
     }
     game = new Phaser.Game(gameConfig);
     window.focus()
