@@ -27,7 +27,8 @@ class playGame extends Phaser.Scene{
         super("PlayGame");
     }
     preload(){
-        this.load.spritesheet("gems", "assets/sprites/gems.png", {
+        // this.load.spritesheet("gems", "assets/sprites/gems.png", {
+            this.load.spritesheet("gems", "uploads/danone/gems.png", {
             frameWidth: gameOptions.gemSize,
             frameHeight: gameOptions.gemSize
         });
