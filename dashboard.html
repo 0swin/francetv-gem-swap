@@ -1,13 +1,28 @@
-<form action="cible.php" method="post" enctype="multipart/form-data">
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel='stylesheet' href='https://cdn.jsdelivr.net/gh/kognise/water.css@latest/dist/light.min.css'>
+    <title>Dashboard</title>
+</head>
+
+<body>
+    <form action="cible.php" method="post" enctype="multipart/form-data">
         <p>
-        	Formulaire d'envoi de fichier :<br />
-        	<p>
-        		Marque :
-        	<input type="text" name="marque" />
-        	</p>
+            Formulaire d'envoi de fichier :<br />
+            <p>
+                Marque :
+                <input type="text" name="marque" />
+            </p>
             <input type="file" name="monfichier" /><br />
             <input type="file" name="monfichier2" /><br />
             <input type="file" name="monfichier3" /><br />
             <input type="submit" value="Envoyer les fichiers" />
         </p>
-</form>
+    </form>
+</body>
+
+</html>
