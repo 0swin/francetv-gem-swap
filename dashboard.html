@@ -13,44 +13,48 @@
 
 <body>
     <nav class="navbar navbar-expand-sm navbar-dark bg-dark">
-        <a class="navbar-brand" href="#">
-            <img src="assets/svg/ftvplogo.svg" alt="" height="30" width="auto">
-        </a>
+        <div class="container">
+            <a class="navbar-brand ml-2" href="#">
+                <img src="assets/svg/ftvplogo.svg" alt="" height="30" width="auto">
+            </a>
+        </div>
     </nav>
 
     <div class="container mt-3">
-        <form action="cible.php" method="post" enctype="multipart/form-data">
-            <p>Formulaire d'envoi de fichier :</p>
-            <div class="form-group">
-                <select class="custom-select" name="marque">
-                    <option selected>Marque</option>
-                    <option value="1">Danone</option>
-                    <option value="2">Nissan</option>
-                </select>
-            </div>
-            <div class="form-group">
-                <div class="custom-file">
-                    <input type="file" name="monfichier1" class="custom-file-input" id="customFile">
-                    <label class="custom-file-label" for="customFile">Choose file</label>
+        <div class="col-6">
+            <form action="cible.php" method="post" enctype="multipart/form-data">
+                <p>Formulaire d'envoi de fichier :</p>
+                <div class="form-group">
+                    <select class="custom-select" name="marque">
+                        <option selected>Marque</option>
+                        <option value="danone">Danone</option>
+                        <option value="nissan">Nissan</option>
+                    </select>
                 </div>
-                <small id="helpId" class="text-muted">Mon Fichier 1</small>
-            </div>
-            <div class="form-group">
-                <div class="custom-file">
-                    <input type="file" name="monfichier2" class="custom-file-input" id="customFile">
-                    <label class="custom-file-label" for="customFile">Choose file</label>
+                <div class="form-group">
+                    <div class="custom-file">
+                        <input type="file" name="monfichier" class="custom-file-input" id="customFile">
+                        <label class="custom-file-label" for="customFile">Choose file</label>
+                    </div>
+                    <small id="helpId" class="text-muted">Mon Fichier 1</small>
                 </div>
-                <small id="helpId" class="text-muted">Mon Fichier 2</small>
-            </div>
-            <div class="form-group">
-                <div class="custom-file">
-                    <input type="file" name="monfichier3" class="custom-file-input" id="customFile">
-                    <label class="custom-file-label" for="customFile">Choose file</label>
+                <div class="form-group">
+                    <div class="custom-file">
+                        <input type="file" name="monfichier2" class="custom-file-input" id="customFile">
+                        <label class="custom-file-label" for="customFile">Choose file</label>
+                    </div>
+                    <small id="helpId" class="text-muted">Mon Fichier 2</small>
                 </div>
-                <small id="helpId" class="text-muted">Mon Fichier 3</small>
-            </div>
-            <button type="submit" class="btn btn-primary">Envoyer les fichiers</button>
-        </form>
+                <div class="form-group">
+                    <div class="custom-file">
+                        <input type="file" name="monfichier3" class="custom-file-input" id="customFile">
+                        <label class="custom-file-label" for="customFile">Choose file</label>
+                    </div>
+                    <small id="helpId" class="text-muted">Mon Fichier 3</small>
+                </div>
+                <button type="submit" class="btn btn-primary">Envoyer les fichiers</button>
+            </form>
+        </div>
     </div>
 
     <script src="assets/js/jquery.js">
