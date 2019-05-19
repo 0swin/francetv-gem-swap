@@ -1,0 +1,11 @@
+.logo {
+    width: 50%;
+}
+.game-col {
+    background-image: url("../../uploads/danone/bg.png");
+    height: 100%;
+    width: 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}

@@ -14,7 +14,7 @@ window.onload = function() {
         width: 1800,
         height: 1800,
         scene: playGame,
-        backgroundColor: 0x222222,
+        transparent: true,
         parent: "game"
     }
     game = new Phaser.Game(gameConfig);
@@ -37,7 +37,7 @@ class playGame extends Phaser.Scene{
         this.match3 = new Match3({
             rows: 8,
             columns: 7,
-            items: 4
+            items: 3
         });
         this.match3.generateField();
         this.canPick = true;
