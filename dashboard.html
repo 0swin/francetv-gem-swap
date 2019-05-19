@@ -5,18 +5,62 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="assets/css/bootstrap.css">
+    <link rel="stylesheet" href="assets/css/dashboard.css">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:400,500,600,700,800&display=swap" rel="stylesheet">
     <title>Dashboard</title>
 </head>
 
 <body>
-    <form action="cible.php" method="post" enctype="multipart/form-data">
-        <p>Formulaire d'envoi de fichier :</p>
-        <p>Marque : <input type="text" name="marque" /></p>
-        <input type="file" name="monfichier" /><br/>
-        <input type="file" name="monfichier2" /><br/>
-        <input type="file" name="monfichier3" /><br/>
-        <input type="submit" value="Envoyer les fichiers" />
-    </form>
+    <nav class="navbar navbar-expand-sm navbar-dark bg-dark">
+        <a class="navbar-brand" href="#">
+            <img src="assets/svg/ftvplogo.svg" alt="" height="30" width="auto">
+        </a>
+    </nav>
+
+    <div class="container mt-3">
+        <form action="cible.php" method="post" enctype="multipart/form-data">
+            <p>Formulaire d'envoi de fichier :</p>
+            <div class="form-group">
+                <select class="custom-select" name="marque">
+                    <option selected>Marque</option>
+                    <option value="1">Danone</option>
+                    <option value="2">Nissan</option>
+                </select>
+            </div>
+            <div class="form-group">
+                <div class="custom-file">
+                    <input type="file" name="monfichier1" class="custom-file-input" id="customFile">
+                    <label class="custom-file-label" for="customFile">Choose file</label>
+                </div>
+                <small id="helpId" class="text-muted">Mon Fichier 1</small>
+            </div>
+            <div class="form-group">
+                <div class="custom-file">
+                    <input type="file" name="monfichier2" class="custom-file-input" id="customFile">
+                    <label class="custom-file-label" for="customFile">Choose file</label>
+                </div>
+                <small id="helpId" class="text-muted">Mon Fichier 2</small>
+            </div>
+            <div class="form-group">
+                <div class="custom-file">
+                    <input type="file" name="monfichier3" class="custom-file-input" id="customFile">
+                    <label class="custom-file-label" for="customFile">Choose file</label>
+                </div>
+                <small id="helpId" class="text-muted">Mon Fichier 3</small>
+            </div>
+            <button type="submit" class="btn btn-primary">Envoyer les fichiers</button>
+        </form>
+    </div>
+
+    <script src="assets/js/jquery.js">
+    </script>
+    <script src="assets/js/bs-custom-file-input.js"></script>
+    <script>
+        $(document).ready(function () {
+            bsCustomFileInput.init()
+        })
+    </script>
 </body>
 
 </html>

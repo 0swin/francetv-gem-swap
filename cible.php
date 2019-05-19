@@ -13,11 +13,11 @@
 		$current_file_path = dirname(__FILE__);
 		$fullpath = $current_file_path . DIRECTORY_SEPARATOR . 'uploads/';
 		$marquepath = $fullpath . $_POST['marque']. DIRECTORY_SEPARATOR;
-	////Fait le dossier de la marque/////
+		// Fait le dossier de la marque
 		if (is_dir($marquepath) == FALSE){ 
 			mkdir($fullpath.$_POST['marque'] , 0777);
 		}
-	///rajoute les fichiers///
+		// Rajoute les fichiers
 
 
 		if (isset($_FILES['monfichier']) AND $_FILES['monfichier']['error'] == 0){
