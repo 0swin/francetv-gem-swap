@@ -1,4 +1,5 @@
 let game;
+let score = 0;
 let gameOptions = {
     gemSize: 100,
     swapSpeed: 150,
@@ -125,6 +126,9 @@ class playGame extends Phaser.Scene{
         gemsToRemove.forEach(function(gem){
             this.poolArray.push(this.match3.customDataOf(gem.row, gem.column))
             destroyed ++;
+            score++;
+            console.log(score);
+            document.getElementsByClassName('score')[0].innerHTML = score;
             this.tweens.add({
                 targets: this.match3.customDataOf(gem.row, gem.column),
                 alpha: 0,
