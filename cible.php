@@ -59,6 +59,7 @@
 		else
 			echo nl2br("Vous avez oublié d'envoyer la troisième image\n");
 	?>
+	<a href="index.html">Acceder au streaming</a>
 </body>
 
 </html>
