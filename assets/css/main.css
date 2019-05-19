@@ -9,3 +9,10 @@
     background-repeat: no-repeat;
     background-size: cover;
 }
+
+.ftv {
+    background-image: url("../../assets/jpg/ftv.jpg");
+    background-position: center top;
+    background-size: 100%;
+    background-repeat: no-repeat;
+}
