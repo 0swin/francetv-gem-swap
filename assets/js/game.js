@@ -38,7 +38,7 @@ class playGame extends Phaser.Scene{
         this.match3 = new Match3({
             rows: 8,
             columns: 7,
-            items: 3
+            items: 4
         });
         this.match3.generateField();
         this.canPick = true;
